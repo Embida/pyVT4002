@@ -13,12 +13,12 @@ from setuptools import find_packages, setup, Command
 
 # Package meta-data.
 NAME = 'pyVT4002'
-DESCRIPTION = 'A driver for vt4002 Vötsch climate chamber.'
+DESCRIPTION = 'A driver for vt4002 Vtsch climate chamber.'
 URL = 'https://github.com/Embida/pyVT4002'
 EMAIL = 'post@embida.no'
 AUTHOR = 'Embida AS'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.4'
+VERSION = '0.6'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
