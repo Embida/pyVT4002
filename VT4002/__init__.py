@@ -57,7 +57,7 @@ class Connection:
         try:
             return VT4002(reading)
         except IndexError:
-            print("no resonse...")
+            print("no response...")
             return self.get_actual_values()
 
 
@@ -72,14 +72,15 @@ class Connection:
             ctrl_value_1=actual_values.ctrl_value_1
 
         self._serial_write(("$"+self.chamber_address+"E "+str(nominal_value_1)+" "+str(nominal_value_2)+" "+str(ctrl_value_1)+"\r\n"))
-        print(self._serial_read())
+        return self._serial_read()
 
 
 
     def start_program(self, program=1):
         self._serial_write(("$"+self.chamber_address+"P"+str(program).zfill(4)+"\r\n"))
+        return self._serial_read()
 
 
 
     def stop_program(self):
-        self.start_program(0)
+        return self.start_program(0)
