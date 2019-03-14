@@ -18,7 +18,7 @@ URL = 'https://github.com/Embida/pyVT4002'
 EMAIL = 'post@embida.no'
 AUTHOR = 'Embida AS'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.6'
+VERSION = '0.9.1'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
